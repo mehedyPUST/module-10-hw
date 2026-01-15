@@ -124,6 +124,7 @@ body {
 
 .sponsors {
   margin-top: 70px;
+  margin-bottom: 100px;
 }
 
 
@@ -132,6 +133,18 @@ body {
   justify-content: space-around;
   max-width: 1110px;
   margin: 0 auto;
+}
+
+.collections {
+  max-width: 1047px;
+  margin: 0 auto;
+}
+
+.collection-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  row-gap: 30px;
+  column-gap: 30px;
 }
 
 
