@@ -139,6 +139,7 @@ body {
 }
 
 .hero-container {
+  width: 100%;
   flex-direction: column-reverse;
   text-align: center;
   gap: 30px;
