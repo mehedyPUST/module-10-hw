@@ -1,4 +1,7 @@
-
+*{
+  margin: 0;
+  padding: 0;
+}
 
 
 .poppins-font-family {
@@ -35,6 +38,7 @@ body {
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
+  margin-top: 30px;
 }
 
 .nav-links ul {
@@ -47,7 +51,76 @@ body {
   text-decoration: none;
 }
 
+.hero-section {
+  max-width: 1190px;
+  margin: 50px auto;
+  padding: 0 16px;
+  /* border:  1px solid red; */
 
+}
+
+.hero-container {
+  display: flex;
+  gap: 133px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  
+}
+
+.hero-text {
+  max-width: 582px;
+  /* border: 1px solid rgb(30, 64, 216); */
+}
+
+.hero-text-heading {
+  font-size: 3.25rem;
+  font-weight: bold;
+}
+
+.hero-text-minimal {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(58, 58, 58, 1);
+  margin-top: 16px;
+   
+}
+
+.red-btn {
+  background-color: #E02C6D;
+  width: 150px;
+  height: 35px;
+  border: none;
+  border-radius: 110px;
+  color: white;
+  margin-top: 16px;
+}
+
+.hero-image-container {
+  width: 100%;
+  max-width: 475px;
+  aspect-ratio: 1 / 1;
+  /* height: 475px; */
+  /* border: 1px solid green; */
+  background: url(images/Circle\ design.svg) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.main-camera-img {
+  width: 100%;
+  height: auto;
+
+}
+
+.hero-image {
+  margin: 0 auto;
+  margin: 30px 30px 33px 2px;
+  /* border: 1px solid #E02C6D; */
+
+}
 
 
 
@@ -58,10 +131,37 @@ body {
 
 @media screen and (max-width:576px) {
   
-  .navbar, .nav-items {
-   display: block;
-   
-   
+.navbar,
+.nav-links ul {
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
 }
-  
+
+.hero-container {
+  flex-direction: column-reverse;
+  text-align: center;
+  gap: 30px;
+}
+
+.hero-text {
+  max-width: 100%;
+}
+
+
+.hero-text-heading {
+  font-size: 2rem;
+}
+
+.hero-text-minimal {
+  font-size: 0.95rem;
+}
+
+.red-btn {
+  margin: 20px auto 0;
+}
+
+
+
+
 }
