@@ -105,6 +105,7 @@ body {
   /* border: 1px solid green; */
   background: url(images/Circle\ design.svg) ;
   background-repeat: no-repeat;
+  background-size: cover;        /* 👈 KEY */
   background-position: center;
   
 }
@@ -140,6 +141,14 @@ body {
   margin: 0 auto;
 }
 
+.collections-heading-text {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.9rem;
+  font-weight: 600;
+  
+}
+
 .collection-container {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -147,6 +156,36 @@ body {
   column-gap: 30px;
 }
 
+.collections-card {
+  border-radius: 8px;
+  padding: 17px;
+  max-width: 329px;
+  box-shadow: 0 4px 30px rgba(252, 166, 166, 0.274) ;
+}
+
+.collections-pic {
+  max-width: 300px;
+  /* width: 100%; */
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+.collection-name {
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+
+}
+
+.price {
+  font-size: 1.75rem;
+  margin-bottom: 5px;
+}
+
+.card-details {
+  font-size: .9rem;
+}
 
 
 
@@ -170,12 +209,17 @@ body {
 }
 
 .hero-container {
-  width: 100%;
+
   flex-direction: column-reverse;
   text-align: center;
   gap: 30px;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+
+.hero-image-container {
+  background-size: contain;
 }
 
 
@@ -197,11 +241,35 @@ body {
   margin: 20px auto 0;
 }
 
+.sponsors {
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
 
 .sponsors-container {
+  max-width: 90%;
   flex-wrap: wrap;
-  gap: 40px;
+  align-items: center;
+  gap: 10px;
 }
+
+.sponsors-container img {
+  max-width: 90%;
+}
+
+.collections {
+  align-items: center;
+  margin: 0 auto;
+}
+
+.collection-container {
+  grid-template-columns: repeat(1,1fr);
+  row-gap: 20px;
+  column-gap: none;
+  justify-items: center;
+}
+
 
 
 }
