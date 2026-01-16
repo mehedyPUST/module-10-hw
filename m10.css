@@ -33,7 +33,7 @@ body {
 }
 
 .navbar {
-
+  display:flex;
   max-width:1200px;
   justify-content: space-between;
   margin: 0 auto;
@@ -87,7 +87,7 @@ body {
    
 }
 
-.red-btn {
+.red-btn, .red-btn-1 {
   background-color: #E02C6D;
   width: 150px;
   height: 35px;
@@ -95,6 +95,10 @@ body {
   border-radius: 110px;
   color: white;
   margin-top: 16px;
+}
+
+.red-btn-1 {
+  border-radius: 0;
 }
 
 .hero-image-container {
@@ -105,7 +109,8 @@ body {
   /* border: 1px solid green; */
   background: url(images/Circle\ design.svg) ;
   background-repeat: no-repeat;
-  background-size: cover;        /* 👈 KEY */
+  /* background-size: cover;   */
+  background-size: contain;        /* 👈 background aligned with the main image */
   background-position: center;
   
 }
@@ -206,10 +211,80 @@ body {
   border-radius: 110px;
   color: rgb(253, 3, 3);
   cursor: pointer;
-  
-
+  margin-bottom: 16px;
 }
 
+.featured-container {
+  display: flex;
+  align-items: center;
+  gap: 96px ;
+  /* border: 1px solid red; */
+  height: 404px;
+  max-width: 1110px ;
+  margin: 0 auto;
+  
+}
+
+.featured-heading {
+  margin-bottom: 16px;
+}
+
+.img-featured-image {
+  max-width: 404px;
+  
+}
+
+
+
+.footer-section {
+  max-width: 1440px;
+  height: 250px; 
+  margin: 0 auto;
+  background-color: rgb(19, 9, 20);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+
+.brand-name-footer {
+  color: white;
+}
+
+.copy-r8 {
+  color: white;
+  margin-top: 17px ;
+}
+
+
+.footer-link-list {
+  display: flex;
+  gap: 16px ;
+  margin-top: 17px ;
+  list-style: none;
+}
+
+.footer-link-list li a {
+  width: 32px;
+  color: white;
+  cursor: pointer;
+}
+
+.icon-bg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: #624ff5;
+  border-radius: 50%; /* circle */
+}
 
 
 
@@ -294,5 +369,21 @@ body {
 }
 
 
+.featured-container {
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  gap: 60px ;
+  /* border: 1px solid red; */
+  height: 404px;
+  margin-bottom: 50px ;
+  max-width: 1110px ;
+  margin: 0 auto; 
+}
 
+.img-featured-image {
+  width: 80%;
+
+
+}
 }
