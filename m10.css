@@ -188,6 +188,28 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.see-more {
+  
+  max-width: 1047px ;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+
+.btn-see-more {
+  margin-top: 50px;
+  background-color: transparent ;
+  width: 150px;
+  height: 35px;
+  border: none;
+  border-radius: 110px;
+  color: rgb(253, 3, 3);
+  cursor: pointer;
+  
+
+}
+
 
 
 
